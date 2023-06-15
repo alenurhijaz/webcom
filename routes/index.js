@@ -31,7 +31,7 @@ router.get('/:file', function(req, res, next) {
 });
 
 function view(file, res){
-  res.render(`home/${file}`, {"data":data})
+  res.render(`${file}`, {"data":data})
 }
 
 module.exports = router;
